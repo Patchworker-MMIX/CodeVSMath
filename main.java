@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 /**
  * Beschreiben Sie hier die Klasse main.
@@ -5,22 +6,19 @@
  * @author Jannis Kustos 
  * @version v0.0.1
  */
+
 public class main
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    private int[] GLOBAL_LIST_OF_DICE = {0,1,2};
+    private int GLOBAL_OFFSET = 0;
     
-    public main()
-    {
-        // Instanzvariable initialisieren
-        x = 10;
-    }
-
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        int res = x + y;
-        System.out.println("Sum: " + res);
-        return res;
+    public void start() {
+        //testCalling Code
+        Code codeClass = new Code();
+    
+        int[] x = codeClass.executeCode(GLOBAL_LIST_OF_DICE);
+        System.out.println("EC RES: " + Arrays.toString(x));
+        System.out.println("START() FINISHED");
+        
     }
 }
