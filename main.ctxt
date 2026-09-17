@@ -1,6 +1,7 @@
 #BlueJ class context
-#Fri Sep 11 14:37:04 CEST 2026
-comment0.target=main
-comment0.text=\r\n Beschreiben Sie hier die Klasse main.\r\n \r\n @author Jannis Kustos \r\n @version v0.0.1\r\n
-comment1.target=void start()
+#Thu Sep 17 20:19:45 CEST 2026
+comment0.target=Main
+comment0.text=\r\n Main and Konstruktor Class of CvsM\r\n \r\n @author Jannis Kustos \r\n @version v0.2.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
 numComments=2

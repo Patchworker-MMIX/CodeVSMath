@@ -1,7 +1,0 @@
-#BlueJ class context
-#Fri Sep 11 14:37:04 CEST 2026
-comment0.target=Code
-comment0.text=\r\n Beschreiben Sie hier die Klasse Code.\r\n \r\n @author Jannis Kustos \r\n @version v0.0.1\r\n
-comment1.params=X
-comment1.target=int[] executeCode(int[])
-numComments=2

@@ -1,21 +1,21 @@
 import java.util.Arrays;
 
 /**
- * Beschreiben Sie hier die Klasse main.
+ * Main and Konstruktor Class of CvsM
  * 
  * @author Jannis Kustos 
- * @version v0.0.1
+ * @version v0.2.0
  */
 
-public class main
+public class Main
 {
-    private int[] GLOBAL_LIST_OF_DICE = {0,1,2};
-    private int GLOBAL_OFFSET = 0;
+    private static int[] GLOBAL_LIST_OF_DICE = {2,4,6};
+    private static int GLOBAL_OFFSET = 0;
     
-    public void start() {
+    public static void main(String[] args) {
         //testCalling Code
-        Code codeClass = new Code();
-    
+        CodeSim codeClass = new CodeSim();
+        
         int[] x = codeClass.executeCode(GLOBAL_LIST_OF_DICE);
         System.out.println("EC RES: " + Arrays.toString(x));
         System.out.println("START() FINISHED");
