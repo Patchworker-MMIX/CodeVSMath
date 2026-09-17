@@ -9,7 +9,7 @@ zumindest die folgenden Angaben umfassen:
 PROJEKTBEZEICHNUNG: CODE VS MATH VALIDATER (CVMV)
 PROJEKTZWECK:
 Compare the output of Code with the output of math-functions.
-VERSION oder DATUM: v0.0.1
+VERSION oder DATUM: v0.2.0
 WIE IST DAS PROJEKT ZU STARTEN: -
 AUTOR(EN): Jannis Kustos
 BENUTZERHINWEISE: -
