@@ -21,4 +21,5 @@ QUELLENVERZEICHNIS:
  - https://www.w3schools.com/java/java_arrays.asp
  - https://www.w3schools.com/Java/ref_math_floor.asp
  - https://stackoverflow.com/questions/62717843/cannot-find-symbol-of-math-class
- - https://www.w3schools.com/Java/ref_math_floor.asp
+ - https://stackoverflow.com/questions/6468730/converting-double-to-integer-in-java
+ - https://en.wikipedia.org/wiki/Division_(mathematics)

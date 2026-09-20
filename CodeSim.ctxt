@@ -1,7 +1,7 @@
 #BlueJ class context
-#Thu Sep 17 20:19:45 CEST 2026
+#Sun Sep 20 16:08:50 CEST 2026
 comment0.target=CodeSim
-comment0.text=\r\n Beschreiben Sie hier die Klasse Code.\r\n \r\n @author Jannis Kustos \r\n @version v0.2.0\r\n
+comment0.text=\r\n Beschreiben Sie hier die Klasse Code.\r\n \r\n @author Jannis Kustos \r\n @version v0.2.1\r\n
 comment1.params=X
 comment1.target=int[] executeCode(int[])
 numComments=2

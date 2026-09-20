@@ -3,7 +3,7 @@
  * Beschreiben Sie hier die Klasse Code.
  * 
  * @author Jannis Kustos 
- * @version v0.2.0
+ * @version v0.2.1
  */
 
 public class CodeSim extends Main
@@ -31,21 +31,24 @@ public class CodeSim extends Main
         System.out.println("len:" + resultArray.length);
         
         for(int i1 = 1; i1 <= numPossibleResults; i1++) {
-            int tmpResult = 0;
+            int indexOfResult = 0;
             for(int i2 = 0; i2 < X.length; i2++) {
-                /*
-                System.out.println(
-                    Math.floor((i1-1)/giveCorrectQ(i2,X))%X[i2]+1
-                );
-                */
-                if(i2 == 0) {
-                    tmpResult += ((Math.floor(i1-1))% X[i2])+1;
-                }else {
-                    tmpResult += ((Math.floor((i1-1)/X[i2-1]))% X[i2])+1;   
+                int tmpIndexOfResult = 0;
+                int tmpDividend = 1;
+                for(int i3 = 0; i3 <= (i2-1); i3++) {
+                    tmpDividend *= X[i3];
                 }
+                System.out.println("tmpD: " + tmpDividend);
+                    
+                tmpIndexOfResult = (i1-1)/tmpDividend;
+                tmpIndexOfResult = (int) Math.floor(tmpIndexOfResult);
+                tmpIndexOfResult = tmpIndexOfResult % X[i2];
+                tmpIndexOfResult++;
+                
+                indexOfResult += tmpIndexOfResult;
             }
-            System.out.println(tmpResult);
-            resultArray[tmpResult]++;
+            System.out.println(indexOfResult);
+            resultArray[indexOfResult]++;
         }
 
         return resultArray;
