@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Main
 {
     private static int[] GLOBAL_LIST_OF_DICE = {2,4,6};
-    private static int GLOBAL_OFFSET = 0;
+    public static int GLOBAL_OFFSET = 10;
     
     public static void main(String[] args) {
         //testCalling Code

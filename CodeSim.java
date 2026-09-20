@@ -3,7 +3,7 @@
  * Beschreiben Sie hier die Klasse Code.
  * 
  * @author Jannis Kustos 
- * @version v0.2.1
+ * @version v0.2.2
  */
 
 public class CodeSim extends Main
@@ -13,13 +13,14 @@ public class CodeSim extends Main
         for(int i = 0; i < X.length; i++) {
             numPossibleResults *= X[i];
         }
-        // Number of all possible results of the roll
+        //Number of all possible results of the roll
         System.out.println("NPR: " + numPossibleResults);
         
         int maxPossibleResult = 0;
         for(int i = 0; i < X.length; i++) {
             maxPossibleResult += X[i];
         }
+        maxPossibleResult += GLOBAL_OFFSET;
         // Maximum of all possible results of the roll
         System.out.println("MPR: " + maxPossibleResult);
         
@@ -31,7 +32,7 @@ public class CodeSim extends Main
         System.out.println("len:" + resultArray.length);
         
         for(int i1 = 1; i1 <= numPossibleResults; i1++) {
-            int indexOfResult = 0;
+            int indexOfResult = GLOBAL_OFFSET;
             for(int i2 = 0; i2 < X.length; i2++) {
                 int tmpIndexOfResult = 0;
                 int tmpDividend = 1;
