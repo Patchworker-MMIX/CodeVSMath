@@ -10,14 +10,14 @@ public class CodeSim extends Main
 {
     public int[] executeCode(int[] X) {
         int numPossibleResults = 1;
-        for(int i = 0; i < X.length; i++) {
+        for(int i = 1; i < X.length; i++) {
             numPossibleResults *= X[i];
         }
         //Number of all possible results of the roll
         System.out.println("NPR: " + numPossibleResults);
         
         int maxPossibleResult = 0;
-        for(int i = 0; i < X.length; i++) {
+        for(int i = 1; i < X.length; i++) {
             maxPossibleResult += X[i];
         }
         maxPossibleResult += GLOBAL_OFFSET;
@@ -33,10 +33,10 @@ public class CodeSim extends Main
         
         for(int i1 = 1; i1 <= numPossibleResults; i1++) {
             int indexOfResult = GLOBAL_OFFSET;
-            for(int i2 = 0; i2 < X.length; i2++) {
+            for(int i2 = 1; i2 < X.length; i2++) {
                 int tmpIndexOfResult = 0;
                 int tmpDividend = 1;
-                for(int i3 = 0; i3 <= (i2-1); i3++) {
+                for(int i3 = 1; i3 <= (i2-1); i3++) {
                     tmpDividend *= X[i3];
                 }
                 System.out.println("tmpD: " + tmpDividend);

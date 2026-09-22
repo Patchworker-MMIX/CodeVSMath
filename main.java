@@ -9,16 +9,22 @@ import java.util.Arrays;
 
 public class Main
 {
-    private static int[] GLOBAL_LIST_OF_DICE = {2,4,6};
+    private static int[] GLOBAL_LIST_OF_DICE = {0,2,4,6};
     public static int GLOBAL_OFFSET = 10;
     
     public static void main(String[] args) {
         //testCalling Code
         CodeSim codeClass = new CodeSim();
         
-        int[] x = codeClass.executeCode(GLOBAL_LIST_OF_DICE);
-        System.out.println("EC RES: " + Arrays.toString(x));
-        System.out.println("START() FINISHED");
+        int[] x1 = codeClass.executeCode(GLOBAL_LIST_OF_DICE);
+        System.out.println("EC RES: " + Arrays.toString(x1));
         
+        MathSim mathClass = new MathSim();
+        
+        int[] x2 = mathClass.executeMath(GLOBAL_LIST_OF_DICE);
+        System.out.println("EM RES: " + Arrays.toString(x2));
+        
+        
+        System.out.println("START() FINISHED");
     }
 }
