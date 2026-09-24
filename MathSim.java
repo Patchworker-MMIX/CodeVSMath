@@ -3,7 +3,7 @@ import java.util.Arrays;
  * Beschreiben Sie hier die Klasse Math.
  * 
  * @author Jannis Kustos 
- * @version v0.1.0
+ * @version v0.2.0
  */
 
 public class MathSim extends Main

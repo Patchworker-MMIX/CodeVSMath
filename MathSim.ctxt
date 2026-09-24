@@ -1,7 +1,7 @@
 #BlueJ class context
-#Thu Sep 24 21:47:51 CEST 2026
+#Thu Sep 24 23:25:38 CEST 2026
 comment0.target=MathSim
-comment0.text=\r\n Beschreiben Sie hier die Klasse Math.\r\n \r\n @author Jannis Kustos \r\n @version v0.1.0\r\n
+comment0.text=\r\n Beschreiben Sie hier die Klasse Math.\r\n \r\n @author Jannis Kustos \r\n @version v0.2.0\r\n
 comment1.params=X
 comment1.target=int[] executeMath(int[])
 comment2.params=w n X
