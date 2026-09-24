@@ -9,8 +9,8 @@ import java.util.Arrays;
 
 public class Main
 {
-    private static int[] GLOBAL_LIST_OF_DICE = {0,2,4,6};
-    public static int GLOBAL_OFFSET = 10;
+    private static int[] GLOBAL_LIST_OF_DICE = {0,6,6,6};
+    public static int GLOBAL_OFFSET = 0;
     
     public static void main(String[] args) {
         //testCalling Code
@@ -20,6 +20,8 @@ public class Main
         System.out.println("EC RES: " + Arrays.toString(x1));
         
         MathSim mathClass = new MathSim();
+
+        System.out.println("");
         
         int[] x2 = mathClass.executeMath(GLOBAL_LIST_OF_DICE);
         System.out.println("EM RES: " + Arrays.toString(x2));
