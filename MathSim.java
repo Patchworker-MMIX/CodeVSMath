@@ -3,7 +3,7 @@ import java.util.Arrays;
  * Beschreiben Sie hier die Klasse Math.
  * 
  * @author Jannis Kustos 
- * @version v0.2.0
+ * @version v0.3.0
  */
 
 public class MathSim extends Main
@@ -32,7 +32,7 @@ public class MathSim extends Main
             return n;
         }
         
-        double max = 0.5;
+        double max = 0;
         for(int i = 1; i <= n; i++) {
             max += X[i];
         }
@@ -55,11 +55,11 @@ public class MathSim extends Main
         return res;
     }
     
-    private double f(int a, double b) {
+    public double f(int a, double b) {
         double fixedValue = (a-1)/(2*(b-1));
         fixedValue = fixedValue - Math.floor(fixedValue + 0.5);
         fixedValue = Math.abs(fixedValue)*2*(b-1)+1;
         
-        return fixedValue;
+        return Math.round(fixedValue);
     }
 }
