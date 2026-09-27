@@ -31,7 +31,7 @@ public class Main
             System.out.print( mathClass.f(i,8) + ", ");
         }*/
         
-        //System.out.println(Arrays.toString(SortDicei.sortDice(GLOBAL_LIST_OF_DICE)));
+        //System.out.println(Arrays.toString(SortDiceClassi.sortDice(GLOBAL_LIST_OF_DICE)));
         
         System.out.println("START() FINISHED");
     }
