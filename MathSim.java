@@ -11,7 +11,6 @@ public class MathSim extends Main
     public int[] executeMath(int[] X) {
         int n = X.length - 1;
         
-        
         int maxPossibleResult = 0;
         for(int i = 1; i < X.length; i++) {
             maxPossibleResult += X[i];
