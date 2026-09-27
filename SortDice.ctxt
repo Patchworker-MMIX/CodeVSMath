@@ -1,5 +1,5 @@
 #BlueJ class context
-#Sun Sep 27 23:46:26 CEST 2026
+#Sun Sep 27 23:47:29 CEST 2026
 comment0.target=SortDice
 comment0.text=\r\n Write a description of class SortDice here.\r\n\r\n @author Jannis Kustos\r\n @version v0.1.0\r\n
 comment1.params=arrayToSort
